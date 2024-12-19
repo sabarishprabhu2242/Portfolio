@@ -26,8 +26,8 @@ section {
 .job-role{
     color: grey;
     font-weight: lighter;
-    font-size: 15px;
-    margin: 5px 0px 0px 0px;
+    font-size: 1.5rem;
+    margin: 0px 0px 0px 0px;
 }
 
 .logo-box{
@@ -47,6 +47,7 @@ section {
     margin: 20px 0px 10px 0px;
 }
 .ul{
+    font-size: 1.4rem;
     color: rgb(168, 244, 55);
     font-weight: bolder;
     margin-bottom: 10px;
@@ -188,7 +189,7 @@ section {
     display: grid;
     grid-template-columns: 11fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 0.75rem;
+    gap: 1.5rem;
     text-align: left;
 }
 
@@ -201,8 +202,8 @@ section {
 }
 
 .pro-pic1, .pro-pic2, .pro-pic3{
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
     border: 5px solid rgb(220, 219, 219);
     border-radius: 5px;
 }
@@ -216,7 +217,7 @@ section {
 }
 
 .deg, .mark{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 0%;
 }
 
