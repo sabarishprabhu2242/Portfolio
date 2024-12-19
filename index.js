@@ -16,7 +16,7 @@ const port = 3000;
 db.connect();
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static("Public"));
 
 app.get("/", async (req, res) => {
     res.render("index.html");
@@ -30,10 +30,13 @@ app.post("/submit", async (req, res) => {
         const result = await db.query(
             "INSERT INTO feedback (fname, rating) VALUES ($1, $2)",
             [person, rating]
-          );
-            res.redirect("index.html");
+        );
+            res.render("index.ejs"); 
         } catch (err) {
-            console.error("Error Try again");
+            const message = "This is a custom error message"; 
+            console.error(message);  
+            console.error(err); 
+            res.status(500).send(message);
         }
     });
 
