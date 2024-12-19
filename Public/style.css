@@ -1,0 +1,343 @@
+html { 
+    scroll-behavior:smooth; 
+} 
+section { 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #ccc;
+}
+.pages{
+    background: linear-gradient(to left, #000000, #151515);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 3rem;  
+    font-size: 2rem; 
+}
+
+.name{
+    margin: 0px 0px 5px 0px;
+}
+
+.job-role{
+    color: grey;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    justify-content: center;
+    align-items: center;
+}
+.sub-topics{
+    color: #eb6161;
+    margin: 20px 0px 10px 0px;
+}
+.ul{
+    color: rgb(168, 244, 55);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.line{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+}
+.all-content{
+    display: grid;
+    grid-template-columns: 9fr 0.01fr 2fr;
+    gap: 20px;
+    height: auto;
+}
+.content{
+    text-align: left;
+}
+.about-box{
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 10px;
+}
+.link{
+    text-align: left;
+    text-decoration: none;
+    color: aliceblue;
+}
+.link:hover{
+    cursor: pointer;
+    color: rgb(247, 203, 137);
+    text-shadow: 2px 0px 10px rgb(234, 255, 0);
+    font-size: larger;
+}
+.photo1{
+    width: 10rem;
+}
+.icon-box{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 20px 0px 20px 0px;  
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    
+}
+.flt4{
+    animation: rotate 5s ease-in-out infinite;
+}
+@keyframes rotate { 
+    0% { 
+    transform: rotate(0deg); 
+} 50% { 
+    transform: rotate(360deg); 
+} 100% { 
+    transform: rotate(0deg); 
+} 
+}
+
+.flt2{
+    animation: bounce 3s ease-in-out infinite;
+}
+@keyframes bounce { 
+    0%, 100% { 
+        transform: translateY(0); 
+    } 
+    50% { 
+        transform: translateY(-10px); 
+    } 
+}
+
+.flt1{
+    animation: slide 3s ease-in-out infinite;
+}
+@keyframes slide {
+    0% { transform: translateX(0); 
+    } 50% { transform: translateX(-10px); 
+    } 100% { transform: translateX(0); 
+    }
+}
+
+.flt3{
+    animation: fade 1s ease-in-out infinite;
+}
+@keyframes fade { 
+    0%, 100% { 
+        opacity: 1; 
+    } 50% { 
+        opacity: 0.5; 
+    } 
+}
+
+.flt5{
+    animation: slide 3s ease-in-out infinite;
+}
+@keyframes slide {
+    0% { transform: translateX(-10); 
+    } 50% { transform: translateX(-15px); 
+    } 100% { transform: translateX(0); 
+    }
+}
+
+.flt6{
+    animation: bounce 3s ease-in-out infinite;
+}
+@keyframes bounce { 
+    0%, 100% { 
+        transform: translateY(0); 
+    } 
+    50% { 
+        transform: translateY(-10px); 
+    } 
+}
+
+.flt4{
+    animation: rotate 5s ease-in-out infinite;
+}
+@keyframes rotate { 
+    0% { 
+    transform: rotate(0deg); 
+} 50% { 
+    transform: rotate(30deg); 
+} 100% { 
+    transform: rotate(-30deg); 
+} 
+}
+
+
+
+/* project site start from here  */
+
+.p1-content, .p2-content, .p3-content{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0.75rem;
+    text-align: left;
+}
+
+.p2-content{
+    grid-template-columns: 1fr 11fr !important; 
+}
+.para{
+    text-align: justify;
+    margin: 0%;
+}
+
+.pro-pic1, .pro-pic2, .pro-pic3{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(220, 219, 219);
+    border-radius: 5px;
+}
+
+/* education site start from here  */
+.edu{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    margin: 10px 20px 0px 20px;
+    gap: 20px;
+}
+
+.deg, .mark{
+    margin: 0%;
+}
+
+.bold{
+    display: inline-flex;
+    font-weight: lighter;
+    color: rgb(127, 125, 125);
+    line-height: 5px;
+}
+
+/* skills site start from here  */
+
+.skill-box{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    margin: -20px 0px 0px 0px;
+}
+
+/* Expercence site start from here  */
+.experience-box{
+    margin: -20px 0px 0px 0px;
+}
+
+/* intenship site start from here  */
+.intenship-box{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 30px;
+    text-align: justify;
+    margin: -20px 0px 25px 0px;
+}
+
+.bolder{
+    font-size: 15px;
+    color: #868585;
+}
+
+/* skills site start from here  */
+
+.foot{
+    background-color: #181817;
+}
+
+.contact-box, .call{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 7px;
+}
+.logo{
+    fill: grey; 
+     
+}
+.one:hover{
+    fill: rgb(72, 111, 239);
+    animation: float 3s ease-in-out infinite; position: relative; 
+} @keyframes float { 
+    0%, 100% { transform: translateY(0); } 
+    50% { transform: translateY(-10px); } 
+}
+    
+.two:hover{
+    fill: rgb(40, 42, 46);
+    animation: float 3s ease-in-out infinite; position: relative; 
+} @keyframes float { 
+    0%, 100% { transform: translateY(0); } 
+    50% { transform: translateY(-10px); } 
+}
+
+.three:hover{
+    fill: rgb(44, 179, 60);
+    animation: float 3s ease-in-out infinite; position: relative; 
+} @keyframes float { 
+    0%, 100% { transform: translateY(0); } 
+    50% { transform: translateY(-10px); } 
+}
+
+.four:hover{
+    fill: rgb(239, 97, 50);
+    animation: float 3s ease-in-out infinite; position: relative; 
+} @keyframes float { 
+    0%, 100% { transform: translateY(0); } 
+    50% { transform: translateY(-10px); } 
+}
+
+/* Rating tab */
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+
+}
+#feedback-name{
+    height: 30px;
+    width: 180px;
+}
+button {
+    height: 40px;
+    width: 120px;  
+    border-radius: 5px; 
+}
+.feed{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #eb6161;
+}
+.feed:hover{
+    background-color: #d54e4e ;
+}
+.rating { 
+    display: flex; 
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+} 
+.feedback-box{
+    border-style: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
