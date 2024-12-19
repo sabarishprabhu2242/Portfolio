@@ -16,7 +16,7 @@ section {
     font-weight: 400;
     font-style: normal;
     margin: 3rem;  
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 
 .name{
@@ -216,6 +216,7 @@ section {
 }
 
 .deg, .mark{
+    font-size: 1.8rem;
     margin: 0%;
 }
 
@@ -230,7 +231,7 @@ section {
 
 .skill-box{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 0.01fr 1fr 0.01fr 1fr 0.01fr 1fr;
     margin: -20px 0px 0px 0px;
 }
 
@@ -242,14 +243,14 @@ section {
 /* intenship site start from here  */
 .intenship-box{
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 4fr 4fr 4fr;
     gap: 30px;
     text-align: justify;
     margin: -20px 0px 25px 0px;
 }
 
 .bolder{
-    font-size: 15px;
+    font-size: 1rem;
     color: #868585;
 }
 
