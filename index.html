@@ -329,6 +329,8 @@
 <button id="scrollTopButton">To Top</button>
 
 </footer>
+  
+<script src="./index.js"></script>
 <script>
   function copyToClipboard() { 
     const text = "790426(4^3)2"; 
@@ -336,7 +338,7 @@
       alert('Copied to clipboard: ' + text); 
       }).catch(err => { 
         console.error('Failed to copy text: ', err); 
-        }); 
+      }); 
   } 
   document.getElementById("mobile").addEventListener("click", copyToClipboard);
 
@@ -363,7 +365,6 @@
           }); 
         });
 </script>
-<script src="./index.js"></script>
 </body>
 </html>
 
