@@ -341,3 +341,22 @@ button {
     background-color: antiquewhite;
 }
 
+#scrollTopButton { 
+    position:fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 10px; 
+    font-size: 11px; 
+    background-color: #464545; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    display: none;
+    opacity: 0.7;
+    width: 70px;
+} 
+#scrollTopButton:hover { 
+    background-color: #f46060; 
+    opacity: 1;
+}

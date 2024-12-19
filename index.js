@@ -33,7 +33,7 @@ app.post("/submit", async (req, res) => {
           );
             res.redirect("index.html");
         } catch (err) {
-            console.log(err);
+            console.error("Error Try again");
         }
     });
 
@@ -41,23 +41,3 @@ app.listen(port, ()=> {
     console.log(`Server Successfully running on port ${port}`);
 });
 
-
-
-// document.addEventListener('DOMContentLoaded', function() { 
-//     const stars = document.querySelectorAll('.star'); 
-//     const ratingValue = document.getElementById('rating-value');
-//     const heading = document.getElementById('heading-change'); 
-//     stars.forEach(star => { 
-//         star.addEventListener('click', function() { 
-//             const value = this.getAttribute('data-value'); 
-//             ratingValue.textContent = `Rating: ${value}`;
-             
-//             stars.forEach(s => { 
-//                 s.classList.remove('selected'); 
-//                 if (s.getAttribute('data-value') <= value) { 
-//                     s.classList.add('selected'); 
-//                 } 
-//             });  
-//         }); 
-//     }); 
-// });
